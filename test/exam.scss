@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.toggle{
+    display: none;
+}
+
+body{
+    background-color: #e6e5eb;
+    background-image: url("./pexels-anete-lusina-5239564.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+
+button{
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    color: whitesmoke;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.box:not(:first-of-type){
+    display: none;
+}
+
+.instruction{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #bdbdbd;
+    height: 300px;
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 30px;
+    margin: 200px auto;
+    background-color: #4444447d;
+    color: #ffeded;
+    #start{
+        background-color: #bdbdbd;
+        color: ghostwhite;
+        &:hover{
+            box-shadow: 0 0 15px 5px #bdbdbd;
+        }
+    }
+}
+
+#setMark{
+    background-color: #444;
+    color: white;
+    font-size: 17px;
+    padding: 5px 10px;
+    &:hover{
+        box-shadow: 0 0 15px 5px #bdbdbd;
+    }
+}
+
+#exam-body{
+    display: none;
+    margin: 100px auto;
+    background-color: #444444b5;;
+    border: 3px;
+    padding: 20px;
+    .exam{
+        display: flex;
+        justify-content: space-between;
+        .content{
+            flex: 1;
+            padding: 20px;
+            margin-left: 50px;
+            font-size: 20px;
+            color: ghostwhite;
+            gap: 5px;
+        }
+        .markedDiv{
+            flex-basis: 200px;
+            padding: 20px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color:white ;
+            font-style: normal;
+            button{
+                padding: 10px;
+                background-color: #4c4c4c;
+                color: whitesmoke;
+                button{
+                    background-color: ghostwhite;
+                    color: #444;
+                    outline: none;
+                    border: none;
+                    border-radius: 50%;
+                    margin-left: 15px;
+                    font-size: 15px;
+                }
+                &:hover{
+                    box-shadow: 0 0 15px 5px #bdbdbd;
+                }
+            }
+        }
+    }
+
+    #control{
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        padding: 10px;
+        button{
+            color: whitesmoke;
+            margin-left: 20px;
+        }
+        #next{
+            background-color: #4c4c4c;
+            color: ghostwhite;
+            width: 70px;
+            height: 50px;
+            &:hover{
+                box-shadow: 0 0 15px 5px #bdbdbd;
+            }
+        }
+        #pre{
+            background-color: #4c4c4c;
+            color: ghostwhite;
+            width: 70px;
+            height: 50px;
+            &:hover{
+                box-shadow: 0 0 15px 5px #bdbdbd;
+            }
+        }
+        #submit{
+            background-color: #4c4c4c;
+            color: ghostwhite;
+            width: 70px;
+            height: 50px;
+            margin-left: 100px;
+            &:hover{
+                box-shadow: 0 0 15px 5px #bdbdbd;
+            }
+        }
+
+    }
+}
+#time{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 85%;
+    top: -3%;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #444;
+    background-color: #bdbdbd;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px 5px #bdbdbd;;
+}
+
+@media (max-width:767px) {
+    body{
+        width:100%
+    }
+
+    .instruction{
+        font-size: 15px;
+        width: 300px;
+    }
+
+    #exam-body{
+        margin: 20px auto;
+        .exam {
+            flex-direction: column;
+            .content {
+                flex: 1;
+                padding: 10px;
+                margin-left: 0;
+                width: 100%;
+                font-size: 20px;
+                color: ghostwhite;
+                gap: 5px;
+            }
+            .markedDiv {
+                padding: 10px 10px 0;
+                flex-direction: row;
+                flex-wrap: wrap;
+                button{
+                    display: flex;
+                    flex-direction: column;
+                    width: 50px;
+                    button{
+                        margin-left: -6px;
+                        align-items: center;
+                        max-width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+    #control {
+        gap: 0 !important;
+        margin-left: 0px !important;
+        #submit{
+            margin-left: 0px !important;
+        }
+    }
+    #time{
+        left: 35%;
+    }
+    #exam-body .exam .markedDiv{
+        flex-basis: 140px;
+    }
+}

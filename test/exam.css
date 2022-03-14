@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.toggle {
+  display: none;
+}
+
+body {
+  background-color: #e6e5eb;
+  background-image: url("./pexels-anete-lusina-5239564.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: whitesmoke;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.box:not(:first-of-type) {
+  display: none;
+}
+
+.instruction {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  height: 300px;
+  font-size: 20px;
+  border-radius: 3px;
+  padding: 30px;
+  margin: 200px auto;
+  background-color: #4444447d;
+  color: #ffeded;
+}
+
+.instruction #start {
+  background-color: #bdbdbd;
+  color: ghostwhite;
+}
+
+.instruction #start:hover {
+  -webkit-box-shadow: 0 0 15px 5px #bdbdbd;
+          box-shadow: 0 0 15px 5px #bdbdbd;
+}
+
+#setMark {
+  background-color: #444;
+  color: white;
+  font-size: 17px;
+  padding: 5px 10px;
+}
+
+#setMark:hover {
+  -webkit-box-shadow: 0 0 15px 5px #bdbdbd;
+          box-shadow: 0 0 15px 5px #bdbdbd;
+}
+
+#exam-body {
+  display: none;
+  margin: 100px auto;
+  background-color: #444444b5;
+  border: 3px;
+  padding: 20px;
+}
+
+#exam-body .exam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#exam-body .exam .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+  margin-left: 50px;
+  font-size: 20px;
+  color: ghostwhite;
+  gap: 5px;
+}
+
+#exam-body .exam .markedDiv {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: white;
+  font-style: normal;
+}
+
+#exam-body .exam .markedDiv button {
+  padding: 10px;
+  background-color: #4c4c4c;
+  color: whitesmoke;
+}
+
+#exam-body .exam .markedDiv button button {
+  background-color: ghostwhite;
+  color: #444;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+#exam-body .exam .markedDiv button:hover {
+  -webkit-box-shadow: 0 0 15px 5px #bdbdbd;
+          box-shadow: 0 0 15px 5px #bdbdbd;
+}
+
+#exam-body #control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px;
+}
+
+#exam-body #control button {
+  color: whitesmoke;
+  margin-left: 20px;
+}
+
+#exam-body #control #next {
+  background-color: #4c4c4c;
+  color: ghostwhite;
+  width: 70px;
+  height: 50px;
+}
+
+#exam-body #control #next:hover {
+  -webkit-box-shadow: 0 0 15px 5px #bdbdbd;
+          box-shadow: 0 0 15px 5px #bdbdbd;
+}
+
+#exam-body #control #pre {
+  background-color: #4c4c4c;
+  color: ghostwhite;
+  width: 70px;
+  height: 50px;
+}
+
+#exam-body #control #pre:hover {
+  -webkit-box-shadow: 0 0 15px 5px #bdbdbd;
+          box-shadow: 0 0 15px 5px #bdbdbd;
+}
+
+#exam-body #control #submit {
+  background-color: #4c4c4c;
+  color: ghostwhite;
+  width: 70px;
+  height: 50px;
+  margin-left: 100px;
+}
+
+#exam-body #control #submit:hover {
+  -webkit-box-shadow: 0 0 15px 5px #bdbdbd;
+          box-shadow: 0 0 15px 5px #bdbdbd;
+}
+
+#time {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  left: 85%;
+  top: -3%;
+  border-radius: 50%;
+  font-size: 35px;
+  color: #444;
+  background-color: #bdbdbd;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 15px 5px #bdbdbd;
+          box-shadow: 0 0 15px 5px #bdbdbd;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  .instruction {
+    font-size: 15px;
+    width: 300px;
+  }
+  #exam-body {
+    margin: 20px auto;
+  }
+  #exam-body .exam {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #exam-body .exam .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 10px;
+    margin-left: 0;
+    width: 100%;
+    font-size: 20px;
+    color: ghostwhite;
+    gap: 5px;
+  }
+  #exam-body .exam .markedDiv {
+    padding: 10px 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #exam-body .exam .markedDiv button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50px;
+  }
+  #exam-body .exam .markedDiv button button {
+    margin-left: -6px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  #control {
+    gap: 0 !important;
+    margin-left: 0px !important;
+  }
+  #control #submit {
+    margin-left: 0px !important;
+  }
+  #time {
+    left: 35%;
+  }
+  #exam-body .exam .markedDiv {
+    -ms-flex-preferred-size: 140px;
+        flex-basis: 140px;
+  }
+}
+/*# sourceMappingURL=exam.css.map */
