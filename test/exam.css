@@ -133,13 +133,15 @@ input[type="radio"] {
 
 #exam-body .exam .markedDiv button {
   padding: 10px;
-  background-color: #4c4c4c;
-  color: whitesmoke;
+  background-color: #d6d6dd;
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #exam-body .exam .markedDiv button button {
-  background-color: ghostwhite;
-  color: #444;
+  background-color: #4e4a47;
+  color: #f8f8ff;
   outline: none;
   border: none;
   border-radius: 50%;

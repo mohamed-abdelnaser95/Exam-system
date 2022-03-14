@@ -142,7 +142,7 @@ enter.addEventListener( "click", function enter(){
     var getPass = localStorage.getItem("Password");
 
     if(signMail.value == getMail && signPass.value == getPass){
-        window.location.replace("../test/exam.html")
+        window.location.replace("../test/index.html")
     }else if(signMail.value !== getMail){
         entermail.innerHTML = `Email not exist`
         entermail.style.color = `crimson`
