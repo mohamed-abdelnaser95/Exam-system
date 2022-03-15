@@ -182,6 +182,6 @@ function result(){
     var final = `${finalResult * 20}%`
     console.log(`finalResult is ${finalResult} from ${questArray.length}`)
     localStorage.setItem("result", `${final}`)
-    window.location.replace("../result/index.html")
+    window.location.replace("../result/result.html")
 }
 // --------------------------------------------------------------
